@@ -3,16 +3,6 @@
   scroll-behavior: smooth;
 }
 
-#pages {
-  > * {
-    display: none;
-  }
-
-  > .active {
-    display: block;
-  }
-}
-
 body {
   margin: 0;
   background: $color-light;
@@ -36,5 +26,13 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+#pages > section {
+  display: none;
+}
+
+#pages > .active {
+  display: block;
 }
 

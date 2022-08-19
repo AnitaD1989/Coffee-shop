@@ -7,7 +7,7 @@ export const settings = {
 
 export const select = {
   containerOf: {
-    products: '.products-wrapper',
+    products: '.products-wrapper .features',
   }, 
   templateOf: {
     templateProduct: '#template-product',

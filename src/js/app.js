@@ -14,9 +14,10 @@ const app = {
       
       .then(function(parsedResponse) {
         console.log('parsedResponse', parsedResponse);
-        this.data = parsedResponse;
+        thisApp.data = parsedResponse;
+        console.log('thisApp.data', JSON.stringify(thisApp.data));
+        thisApp.initProducts();
       });
-    console.log('thisApp.data', JSON.stringify(thisApp.data));
   },
 
   init: function() {
@@ -24,6 +25,7 @@ const app = {
 
     thisApp.initData();
     thisApp.scrollTo();
+    
   },
 
   initProducts: function() {
