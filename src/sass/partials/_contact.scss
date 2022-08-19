@@ -1,0 +1,69 @@
+
+.contact {
+  margin: 50px 0;
+  text-align: center;
+  letter-spacing: 8px;
+
+  h1 {
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -15%;
+      left: 50%;
+      width: 777px;
+      height: 6px;
+      transform: translateX(-50%);
+      background-color: $color-header;
+    }
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+  
+  form {
+    max-width: 420px;
+    margin: 50px auto;
+  }
+
+  &-input {
+    font-weight: $font-regular;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid black;
+    transition: all 1s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: 0;
+
+    &:focus {
+      border: 2px solid $color-header;
+    }
+  }
+
+  textarea {
+    height: 130px;
+    line-height: 150%;
+    resize: vertical;
+    margin-bottom: 20px;
+  }
+
+  [type="submit"] {
+    text-decoration: none;
+    background: $color-header;
+    border: 0;
+    letter-spacing: 5px;
+    color: $color-light;
+    font-size: 20px;
+    font-weight: $font-bold;
+    padding: 20px 40px;
+    transition: all 1s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}

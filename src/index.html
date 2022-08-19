@@ -8,35 +8,139 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+<!--HEADER -->
 <header class="header">
   <div class="container">
-    <div class="logo">
-      <h1 class="logo__title">EL TIGRE</h1>
-      <h2 class="logo__subtitle">VENEZUELA COFFEE BEANS</h2>
+    <div class="header-wrap row">
+      <div class="logo col-md-4">
+        <h2 class="logo__title">EL TIGRE</h2>
+        <h3 class="logo__subtitle">VENEZUELA COFFEE BEANS</h3>
+      </div>
+      <div class="main-nav col-md-8">
+        <a href="#about" class="scroll-to">ABOUT US</a>
+        <a href="#products" class="scroll-to">PRODUCTS</a>
+        <a href="#contact" class="scroll-to">CONTACT</a>
+      </div>
     </div>
-    <div class="main-nav">
-      <a href="#home">HOME</a>
-      <a href="#products">PRODUCTS</a>
-      <a href="#contact">CONTACT</a>
+    <div class="header-text">
+      <h1 class="header-top-text">HOME OF</h1>
+      <h1 class="header-bottom-text">ORIGINAL TASTES</h1>
     </div>
-    <div class="title">
-      <h1>HOME OF ORIGINAL TASTES</h1>
+    <div class="discover">
+      <h3>Discover</h3>
+      <div class="arrow-down">
+        <a href="#products" class="scroll-to">go</a>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
 </header>
 
-<script id="template-home-page" type= "teXt/x-handlebars-template">
- <!-- HOME-PAGE -->
+<!-- SECTION PRODUCTS -->
+<section class="products" id="products">
+  <div class="products-wrapper container">
+    <div class="products-header" data-aos="zoom-in">
+      <h1>products</h1>
+    </div>
+  <section class="features">
+    <section class="feature-pair">
+      <div class="feature--image">
+        <img src="images/coffee-1.png" alt="coffe-1">
+      </div>
+      <div class="product-description">
+        <h3>01.{{firstProduct.name}}</h3>
+        <p>{{firstProduct.description}}</p>
+      </div>
+      <div clas="row">
+        <div class="col-6" >
+          <p class="parameters">ROASTING: <span>{{firstProduct.roasting}}</span></p>
+          <p class="parameters">INTENSITY: <span>{{firstProduct.intensity}}</span></p>
+        </div>
+        <div class="col-6">
+          <img src="images/Badge.jpg" class="badge {{#if firstProduct.mostPopular}}visible{{/if}}" alt="badge">
+      </div>
+      </div>
+    </section>
+    <section class="feature-pair">
+      <div class="feature--image">
+        <img src="images/coffee-2.png" alt="coffee-2">
+      </div>
+      <div class="product-description">
+        <h3>02.{{secondProduct.name}}</h3>
+        <p>{{secondProduct.description}}</p>
+      </div>
+      <div clas="row">
+        <div class="col-6" >
+          <p class="parameters">ROASTING: <span>{{firstProduct.roasting}}</span></p>
+          <p class="parameters">INTENSITY: <span>{{firstProduct.intensity}}</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="feature-pair">
+      <div class="feature--image">
+        <img src="images/coffee-3.png" alt="coffee-3">
+      </div>
+      <div class="product-description">
+        <h3>03.{{thirdProduct.name}}</h3>
+        <p>{{thirdProduct.description}}</p>
+      </div>
+      <div class="row">
+        <div class= "col-6">
+          <p class="parameters">ROASTING: <span>{{thirdProduct.roasting}}</span></p>
+          <p class="parameters">INTENSITY: <span>{{thirdPrtoduct.intensity}}</span></p>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+<!-- SECTION ABOUT-->
+<section class="about" id="about">
+  <div class="container">
+    <h1 data-aos="zoom-in">about us</h1>
+    <p data-aos="fade-down-right">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
+    <p data-aos="fade-up-left">Our coffees reflect us - young, wild and free. We are on the journey of new tastes...</p>
+    <p data-aos="fade-up">Join us!</p>
+  </div>
+</section>
 
-  
+<!-- SECTION CONTACT-->
+<section class="contact" id="contact">
+  <div class="container">
+    <h1 data-aos="zoom-in">contact us</h1>
+    <form data-aos="fade-up" data-aos-duration="2000">
+      <h3>name</h3>
+      <input name="title" type="text" class="contact-input">
+      <h3>title</h3>
+      <input name="title" type="text" class="contact-input">
+      <h3>message</h3>
+      <textarea name="text" class="contact-input"></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</section>
 
-
-  <script src="js/app.js" type="module"></script>
+<!-- TEMPLATE PRODUCTS -->
+<script id="template-product" type= "text/x-handlebars-template">
+</script>
+<!-- FOOTER -->
+<footer class="copyright">© 2021 EL TIGRE inc.</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="js/app.js" type="module"></script>
+</section>
 </body>
-</html>html>
+</html>
 
   

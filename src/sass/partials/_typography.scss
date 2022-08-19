@@ -1,0 +1,25 @@
+h1 {
+  font-size: $size-section-header;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  margin: 0;
+  color: $color-header;
+}
+
+h2 {
+  font-size: $size-header;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  font-size: $size-small;
+  font-weight: $font-regular;
+}

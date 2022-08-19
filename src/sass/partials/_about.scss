@@ -1,0 +1,44 @@
+.about {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  min-height: 853px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/about-us.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+  .container {
+    max-width: 972px;
+  }
+
+  h1 {
+    letter-spacing: 8px;
+    margin-bottom: 146px;
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -15%;
+      left: 50%;
+      width: 777px;
+      height: 6px;
+      transform: translateX(-50%);
+      background-color: $color-header;
+    }
+  }
+
+  p {
+    color: $color-light;
+    text-align: left;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: $font-semibold;
+  }
+
+  :last-child {
+    text-align: right;
+  }
+}

@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
+
+body {
+  margin: 0;
+  background: $color-light;
+  font-family: $font-main;
+  font-size: $size-base;
+  line-height: 1.7;
+  color: $color-dark;
+  cursor: default;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
