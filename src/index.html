@@ -46,27 +46,33 @@
 
 <!-- SECTION PRODUCTS -->
 <div id="pages">
-  <section id="products" class="active"> 
-    <section class="products" id="products">
+  <section id="products" class="products active">
+    <section id="product-list" class="product">
       <div class="products-wrapper container">
         <div class="products-header" data-aos="zoom-in">
           <h1>products</h1>
         </div>
       <section class="features">
-      </section>
-    </div>
-    <!-- SECTION ABOUT-->
-    <section class="about" id="about">
-      <div class="container">
-        <h1 data-aos="zoom-in">about us</h1>
-        <p data-aos="fade-down-right">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
-        <p data-aos="fade-up-left">Our coffees reflect us - young, wild and free. We are on the journey of new tastes...</p>
-        <p data-aos="fade-up">Join us!</p>
-      </div>
+        </section>
     </section>
+  </section>
+</div>
+    <!-- SECTION ABOUT-->
+    <section id="about2" class="about2">
+      <section class="about" id="about">  
+        <div class="container">
+          <h1 data-aos="zoom-in">about us</h1>
+          <p data-aos="fade-down-right">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
+          <p data-aos="fade-up-left">Our coffees reflect us - young, wild and free. We are on the journey of new tastes...</p>
+          <p data-aos="fade-up">Join us!</p>
+        </div>
+      </section>
+    </section>
+
     <!-- SECTION CONTACT-->
-    <section class="contact" id="contact">
-      <div class="container">
+    <section id="contact2" class="contact2">
+      <section class="contact" id="contact">
+        <div class="container">
         <h1 data-aos="zoom-in">contact us</h1>
         <form data-aos="fade-up" data-aos-duration="2000">
           <h3>name</h3>
@@ -78,30 +84,28 @@
           <button type="submit">SUBMIT</button>
         </form>
       </div>
-    </section>    
+    </section>
   </section>
+</div>
 
 <!-- TEMPLATE PRODUCTS -->
 <script id="template-product" type= "text/x-handlebars-template">
   <section class="feature-pair">
-    <div class="row">
+    
       <div class="feature--image col-6">
         <img src="{{ image }}" alt="coffe-1">
       </div>
       <div class="product-description col-6">
-        <h3>01.{{name}}</h3>
+        <h3>{{name}}</h3>
         <p>{{description}}</p>
-        <div class="row">
           <div class="col-6" >
             <p class="parameters">ROASTING: <span>{{roasting}}</span></p>
             <p class="parameters">INTENSITY: <span>{{intensity}}</span></p>
           </div>
-          <div class="col-6">
+          <div class="col-4">
             <img src="images/Badge.jpg" class="badge {{#if mostPopular}}visible{{/if}}" alt="badge">
         </div>
-        </div>
       </div>
-    </div>
   </section>
 </script>
 <!-- FOOTER -->
@@ -113,10 +117,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="js/app.js" type="module"></script>
-</section>
-</div>
 </body>
 </html>
+
+
 
 
 

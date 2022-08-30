@@ -1,10 +1,11 @@
 import { select, utils, templates } from '../settings.js';
 
 class Products {
-  constructor(data) {
+  constructor(id, data) {
     const thisProducts = this;
 
     thisProducts.data = data;
+    thisProducts.id= id;
 
     thisProducts.getElements();
     thisProducts.render();
