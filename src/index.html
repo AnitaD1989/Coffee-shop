@@ -19,11 +19,11 @@
   <div class="container">
     <div class="header-wrap row">
       <div class="logo col-md-4">
-        <h2 class="logo__title">EL TIGRE</h2>
-        <h3 class="logo__subtitle">VENEZUELA COFFEE BEANS</h3>
+        <h3 class="logo__title">EL TIGRE</h3>
+        <p class="logo__subtitle">VENEZUELA COFFEE BEANS</p>
       </div>
       <div class="main-nav col-md-8">
-        <a href="#about" class="scroll-to">ABOUT US</a>
+        <a href="#home" class="scroll-to">HOME</a>
         <a href="#products" class="scroll-to">PRODUCTS</a>
         <a href="#contact" class="scroll-to">CONTACT</a>
       </div>
@@ -46,56 +46,64 @@
 
 <!-- SECTION PRODUCTS -->
 <div id="pages">
-  <section id="products" class="products active">
+  <section id="home" class="products active">
     <section id="product-list" class="product">
       <div class="products-wrapper container">
         <div class="products-header" data-aos="zoom-in">
-          <h1>products</h1>
+          <h2>products</h2>
         </div>
       <section class="features">
-        </section>
+      </section>
     </section>
-  </section>
-</div>
-    <!-- SECTION ABOUT-->
-    <section id="about2" class="about2">
+    <section class="about2">
       <section class="about" id="about">  
         <div class="container">
-          <h1 data-aos="zoom-in">about us</h1>
+          <h2 data-aos="zoom-in">about us</h2>
           <p data-aos="fade-down-right">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.</p>
           <p data-aos="fade-up-left">Our coffees reflect us - young, wild and free. We are on the journey of new tastes...</p>
           <p data-aos="fade-up">Join us!</p>
-        </div>
+          <div class="coffe-process">
+       </div>
       </section>
     </section>
+  </section>
 
-    <!-- SECTION CONTACT-->
-    <section id="contact2" class="contact2">
-      <section class="contact" id="contact">
-        <div class="container">
-        <h1 data-aos="zoom-in">contact us</h1>
-        <form data-aos="fade-up" data-aos-duration="2000">
-          <h3>name</h3>
-          <input name="title" type="text" class="contact-input">
-          <h3>title</h3>
-          <input name="title" type="text" class="contact-input">
-          <h3>message</h3>
-          <textarea name="text" class="contact-input"></textarea>
-          <button type="submit">SUBMIT</button>
-        </form>
-      </div>
+  <section id="products" class="products">
+    <section id="product-list" class="product">
+      <div class="products-wrapper container">
+        <div class="products-header" data-aos="zoom-in">
+          <h2>products</h2>
+        </div>
+      <section class="features">
+      </section>
     </section>
   </section>
-</div>
 
+  <section id="contact" class="contact2">
+    <section class="contact" id="contact">
+      <div class="container">
+      <h2 data-aos="zoom-in">contact us</h2>
+      <form data-aos="fade-up" data-aos-duration="2000">
+        <h3>name</h3>
+        <input name="title" type="text" class="contact-input">
+        <h3>title</h3>
+        <input name="title" type="text" class="contact-input">
+        <h3>message</h3>
+        <textarea name="text" class="contact-input"></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+
+</div>
 <!-- TEMPLATE PRODUCTS -->
 <script id="template-product" type= "text/x-handlebars-template">
   <section class="feature-pair">
     
-      <div class="feature--image col-6">
+      <div class="feature-image col-6">
         <img src="{{ image }}" alt="coffe-1">
       </div>
-      <div class="product-description col-6">
+      <div class="product-description col-4">
         <h3>{{name}}</h3>
         <p>{{description}}</p>
           <div class="col-6" >
@@ -109,7 +117,7 @@
   </section>
 </script>
 <!-- FOOTER -->
-<footer class="copyright">© 2021 EL TIGRE inc.</footer>
+<footer class="copyright">© 2022 EL TIGRE inc.</footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();

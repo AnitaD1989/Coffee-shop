@@ -8,20 +8,19 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-
+  
+  .logo .logo_title h3 {
+    color: $color-header;
+  }
+  
   .logo {
     text-align: left;
     color: $color-light;
-  
-    &-title {
-      font-size: 36px;
-      letter-spacing: 8px;
-    }
-  
-    &-subtitle {
-      font-size: 16px;
-      letter-spacing: 4px;
-    }
+    font-size: $size-header;
+  }
+
+  .logo p{
+    font-size: 20px;
   }
   
   .main-nav {
@@ -46,17 +45,17 @@
     padding-top: 20%;
     letter-spacing: 8px;
     line-height: 1;
-
-    &::after {
-      position: absolute;
-      content: '';
-      bottom: 370px;
-      left: 49%;
-      width: 370px;
-      height: 6px;
-      transform: translateX(-50%);
-      background-color: $color-header;
-    }
+  }
+  
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 370px;
+    left: 49%;
+    width: 370px;
+    height: 6px;
+    transform: translateX(-50%);
+    background-color: $color-header;
   }
 
   &-top-text {

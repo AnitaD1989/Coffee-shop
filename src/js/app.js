@@ -1,37 +1,37 @@
-import {  settings } from './settings.js';
+import {  settings, select, classNames } from './settings.js';
 import Products from './components/products.js';
 
 const app = {
 
-  /* initPages: function() {
-    const links = document.querySelector(select.nav.links);
+  initPages: function() {
+    const links = document.querySelectorAll(select.nav.links);
 
-    const products = document.querySelector(products.active);
-    const about2 = document.querySelector(about2);
-    const contact2 = document.querySelector(contact2);
+    const home= document.querySelector('#home');
+    const products = document.querySelector('#products');
+    const contact = document.querySelector('#contact');
 
     for (let link of links) {
       link.addEventListener('click', function(event) {
         event.preventDefault();
         const clickedElement = this;
 
+        home.classList.remove(classNames.pages.active);
         products.classList.remove(classNames.pages.active);
-        about2.classList.remove(classNames.pages.activre);
-        contact2.classList.remove(classNames.pages.active);
+        contact.classList.remove(classNames.pages.active);
 
         const href = clickedElement.getAttribute('href');
 
         if(href =='#products') {
           products.classList.add(classNames.pages.active);
-        } if(href == '#about') {
-          about2.classList.add(classNames.pages.active);
+        } if(href == '#home') {
+          home.classList.add(classNames.pages.active);
         } if (href == '#contact') {
-          contact2.classList.add(classNames.pages.active);
+          contact.classList.add(classNames.pages.active);
         }
       });
 
     }
-  },*/
+  },
 
   initData: function() {
     const thisApp= this;
@@ -55,8 +55,8 @@ const app = {
     const thisApp = this;
 
     thisApp.initData();
-    thisApp.scrollTo();
-    //thisApp.initPages();
+    //thisApp.scrollTo();
+    thisApp.initPages();
     
   },
 

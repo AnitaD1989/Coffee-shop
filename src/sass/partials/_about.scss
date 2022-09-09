@@ -12,21 +12,22 @@
   .container {
     max-width: 972px;
   }
-
-  h1 {
+  
+  h2 {
     letter-spacing: 8px;
     margin-bottom: 146px;
     text-align: center;
+    color: $color-header;
 
     &::after {
+      display: flex;
       position: absolute;
+      text-align: center;
       content: '';
-      bottom: -15%;
-      left: 50%;
-      width: 777px;
+      width: 400px;
       height: 6px;
-      transform: translateX(-50%);
       background-color: $color-header;
+      margin-left: 270px;
     }
   }
 

@@ -1,11 +1,8 @@
-import { select, utils, templates } from '../settings.js';
-
+import { select, templates} from '../settings.js';
 class Products {
-  constructor(id, data) {
+  constructor(data) {
     const thisProducts = this;
-
     thisProducts.data = data;
-    thisProducts.id= id;
 
     thisProducts.getElements();
     thisProducts.render();
@@ -13,7 +10,7 @@ class Products {
 
   getElements() {
     const thisProducts = this;
-    thisProducts.productsContainer = document.querySelector(select.containerOf.products);
+    thisProducts.productsContainers = document.querySelectorAll(select.containerOf.products);
   }
 
   render() {
@@ -21,11 +18,16 @@ class Products {
     // const generatedHTML = templates.templateProduct(thisProducts.data);
     // thisProducts.element = utils.createDOMFromHTML(generatedHTML);
     // thisProducts.productsContainer.appendChild(thisProducts.element);
+    let html = '';
     for (const product of thisProducts.data) {
       const generatedHTML = templates.product(product);
-      thisProducts.element = utils.createDOMFromHTML(generatedHTML);
-      thisProducts.productsContainer.appendChild(thisProducts.element);
+      html = html + generatedHTML;
     }
+
+    for (const productsContainer of thisProducts.productsContainers) {
+      productsContainer.innerHTML = html;
+    }
+
   }
 }
 

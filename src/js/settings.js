@@ -6,6 +6,9 @@ export const settings = {
 };
 
 export const select = {
+  nav: {
+    links: '.main-nav a'
+  },
   containerOf: {
     products: '.products-wrapper .features',
   }, 
@@ -14,14 +17,21 @@ export const select = {
   },
 };
 
+export const classNames = {
+  pages: {
+    active: 'active',
+  }
+};
+
 export const templates = {
   product: Handlebars.compile(document.querySelector(select.templateOf.templateProduct).innerHTML),
 };
 
-export const utils = {}; // eslint-disable-line no-unused-vars
+/*export const utils = {}; 
 
 utils.createDOMFromHTML = function(htmlString) {
   let div = document.createElement('div');
   div.innerHTML = htmlString.trim();
   return div.firstChild;
 };
+*/
