@@ -9,20 +9,24 @@
   background-attachment: scroll;
   background-size: cover;
   
-  .logo .logo_title h3 {
+  .logo_title {
     color: $color-header;
+    font-size: $size-header;
   }
   
   .logo {
     text-align: left;
-    color: $color-light;
-    font-size: $size-header;
-  }
-
-  .logo p{
-    font-size: 20px;
   }
   
+  .logo_subtitle {
+    display: flex;
+    letter-spacing: 4px;
+    color: $color-light;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -20px;
+  }
+
   .main-nav {
     text-align: right;
   
@@ -81,4 +85,17 @@
       letter-spacing: 4px;
     }
   }
+}
+
+@media (max-width: 300px) {
+  
+  .header-text { 
+    display: flex block;
+    text-align: center;
+  }
+  
+    ::after {
+      position: absolute;
+      width: auto;
+    }
 }

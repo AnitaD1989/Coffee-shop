@@ -37,3 +37,13 @@ footer {
   display: block;
 }
 
+//Media
+
+@media (max-width: 767px){
+
+  body {
+    display: flex block;
+    flex-direction: column;
+  }
+}
+

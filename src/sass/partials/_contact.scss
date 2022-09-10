@@ -6,14 +6,14 @@
 
   h2 {
     &::after {
+      display: flex;
       position: absolute;
+      text-align: center;
       content: '';
-      bottom: -15%;
-      left: 50%;
-      width: 777px;
+      width: 400px;
       height: 6px;
-      transform: translateX(-50%);
       background-color: $color-header;
+      margin-left: 270px;
     }
   }
 
@@ -64,6 +64,22 @@
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    font-size: 0.875rem;
+    overflow: hidden;
+    text-align: center;
+
+    &::after {
+      display: flex;
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 6px;
+      background-color: $color-header;
+      text-align: center;
     }
   }
 }
