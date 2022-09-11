@@ -80,7 +80,7 @@ h2 {
 }
 
 .badge {
-  visibility: hidden;  
+  visibility: hidden;
   display: flex;
   margin-left: 250px;
 }
@@ -89,9 +89,12 @@ h2 {
   visibility: visible;
 }
 
-@media (max-width: 599px) {
-
+@media (max-width: 400px) {
   .product{
     display: flex block;
   }
+  .badge{
+    margin-bottom: 30px;
+  }
 }
+

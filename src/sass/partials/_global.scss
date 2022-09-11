@@ -39,11 +39,20 @@ footer {
 
 //Media
 
-@media (max-width: 767px){
+@media (min-width: 576px){
+  .container {
+    max-width: 540px;
+  }
+}
 
-  body {
-    display: flex block;
-    flex-direction: column;
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }
 

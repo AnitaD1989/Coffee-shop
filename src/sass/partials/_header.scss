@@ -88,14 +88,13 @@
 }
 
 @media (max-width: 300px) {
-  
   .header-text { 
     display: flex block;
     text-align: center;
   }
   
-    ::after {
-      position: absolute;
-      width: auto;
-    }
+  ::after {
+    position: absolute;
+    width: auto;
+  }
 }

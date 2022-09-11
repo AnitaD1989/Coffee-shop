@@ -98,20 +98,20 @@
 </div>
 <!-- TEMPLATE PRODUCTS -->
 <script id="template-product" type= "text/x-handlebars-template">
-  <section class="feature-pair">
+  <section class="feature-pair col-sm-12">
     
-      <div class="feature-image col-6">
-        <img src="{{ image }}" alt="coffe-1">
+      <div class="feature-image col-md-6">
+        <img src="{{ imgs }}" alt="coffe-1">
       </div>
-      <div class="product-description col-4">
+      <div class="product-description col-md-4 col-sm-12">
         <h3>{{name}}</h3>
         <p>{{description}}</p>
-          <div class="col-6" >
+          <div class="col-md-6 col-sm-12" >
             <p class="parameters">ROASTING: <span>{{roasting}}</span></p>
             <p class="parameters">INTENSITY: <span>{{intensity}}</span></p>
           </div>
-          <div class="col-4">
-            <img src="images/Badge.jpg" class="badge {{#if mostPopular}}visible{{/if}}" alt="badge">
+          <div class="col-4 col-sm-4">
+            <img src="imgs/Badge.jpg" class="badge {{#if mostPopular}}visible{{/if}}" alt="badge">
         </div>
       </div>
   </section>
