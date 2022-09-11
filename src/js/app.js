@@ -49,6 +49,8 @@ const app = {
         console.log('thisApp.data', JSON.stringify(thisApp.data));
         thisApp.initProducts();
       });
+
+    console.log('thisApp.data', JSON.stringify(thisApp.data));
   },
 
   init: function() {
