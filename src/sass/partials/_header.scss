@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   min-height: 940px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/background.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../imgs/background.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -89,7 +89,7 @@
 
 @media (max-width: 300px) {
   .header-text { 
-    display: flex block;
+    display: flex;
     text-align: center;
   }
   
